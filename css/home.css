@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+a {text-decoration: none;}
+/* Navigation bar*/
+  .tab {
+	width: 48%;
+	overflow: hidden;
+	background-color: #000000;
+}
+	  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+	  border-bottom: 5px solid black;
+      outline: none;
+      cursor: crosshair;
+      padding: 14px 16px;
+      transition: 0.3s;
+	  font-size: 120%;
+	  color: #ffffff;
+	  width: 25%;
+  }
+      .tab button.active {
+	    border-bottom: 5px solid yellow;
+    }
+	    .tab button:hover {
+      background-color: #000000;
+	    border-bottom: 5px solid yellow;
+	    color: #ffffff;
+    }
+
+    .tabcontent {
+    display: none;
+    padding: 0px 0px;
+    border-top: none;
+  }
+
+/* Home */
+  .container {
+	width: 100%;
+	background-color: transparent;
+}
+
+    .container .arrow {
+    position: absolute;
+    top: 75%;
+    left: 48%;
+	  display: block;
+	  cursor: crosshair;
+  }
+
+
+      .left{
+      position: absolute;
+      background-color: transparent;
+      top: 0;
+      left:0;
+      width: 40px;
+      height: 10px;
+      display: block;
+      transform: rotate(35deg);
+      float: right;
+      border-radius: 2px;
+    }
+        .left:after {
+        content:"";
+        background-color: white;
+        width: 40px;
+        height: 10px;
+        display: block;
+        float: right;
+        border-radius: 6px 10px 10px 6px;
+        z-index: -1;
+      }
+
+      .right{
+      position: absolute;
+      background-color: transparent;
+      top: 0px;
+      left:26px;
+      width: 40px;
+      height: 10px;
+      display: block;
+      transform: rotate(-35deg);
+      float: right;
+      border-radius: 2px;
+    }
+        .right:after {
+        content:"";
+        background-color: white;
+        width: 40px;
+        height: 10px;
+        display: block;
+        float: right;
+        border-radius: 10px 6px 6px 10px;
+        z-index: 1;
+      }
+
+        .arrow:hover .left:after {background-color: yellow;}
+        .arrow:hover .right:after {background-color: yellow;}
+
+/* Language selection*/
+  .dropbtn {
+  background-color: #000000;
+	border-bottom: 5px solid #000000;
+  color: white;
+  padding: 14px 16px;    font-size: 120%;
+  border: none;
+  cursor: crosshair;
+}
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #363636;
+	  font-size: 150%;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+      .dropdown-content a {
+      color: #ffffff;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+        .dropdown-content a:hover {
+	      background-color: #9E9E9E;
+	      cursor: crosshair;
+      }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    .dropdown:hover .dropbtn {
+    background-color: #000000;
+	   border-bottom: 5px solid blue;
+	    color: #ffffff
+    }
+
+    .dropdown,.tab {
+    display: inline-block;
+  }
+
+/* Footer */
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: yellow;
+color: black;
+font-family: sans-serif;
+text-align: center;
+}
+
+/* About */
+.wrapper div {
+   padding: 10px;
+   overflow: auto;
+   text-align: center;
+}
+
+	#image {
+	width: 40%;
+	float: left;
+  padding-bottom: 3%;
+  overflow: hidden;
+  }
+
+  #l1 {
+  color: #ffffff;
+  font-size: 130%;
+  font-family: sans-serif;
+  padding-top: 16%;
+  padding-bottom: 4%;
+  }
+
+	#l2, #l3{
+	color: #ffffff;
+	font-size: 130%;
+	font-family: sans-serif;
+  padding-bottom: 4%;
+	}
+
+  #l1::first-letter, #l2::first-letter, #l3::first-letter{
+  color: yellow;
+  }
+
+  #About .arrow {
+  position: fixed;
+  display: block;
+  cursor: crosshair;
+  left: 48%;
+  top: 75%;
+}
+/* Portfolio cards */
+
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.wrap div h4 a {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+.wrap div a  {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wrap div p {
+  font-family: sans-serif;
+  font-size: 90%;
+  text-align: center;
+}
+
+  #p1, #p2, #p3, #p4 {
+    display: inline-block;
+    background: none;
+  	background-color: blue;
+    border-radius: 20px;
+  	/* box-shadow: 5px 5px 2px 0px yellow; */
+  	padding: 15px;
+  	width: 17%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  #Portfolio .arrow{
+    position: absolute;
+    display: block;
+    left: 48%;
+    top: 75%;
+    cursor: crosshair;
+    }

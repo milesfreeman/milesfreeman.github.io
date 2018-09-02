@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index.html</title>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<style>
+	body{
+	background-color: #000000;
+}
+</style>
+</head>
+
+<body>
+<div class="head">
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">🌐  Language</button>
+  <div class="dropdown-content">
+    <a href="#">🇺🇸 Eng (US) </a>
+    <a href="Inicio.html">🇲🇽 Esp (AL) </a>
+  </div>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')" id="default">HOME</button>
+  <button class="tablinks" onclick="openTab(event, 'Portfolio')" id="t2">PORTFOLIO</button>
+  <button class="tablinks" onclick="openTab(event, 'About')" id='t3'>ABOUT</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')" id="t4">CONTACT</button>
+</div>
+
+<div id="Home" class="tabcontent">
+<div class="container">
+<img src="img/header2.png" width="100%">
+ <a class="arrow" id="arrow1" onclick="clickArrow('t2')">
+	 <span class="left"></span>
+	 <span class="right"></span>
+ </a>
+  </div>
+</div>
+
+<div id="Portfolio" class="tabcontent">
+		<div class="wrap">
+				<div id="p1">
+          <h4><a href="#">Mathematical Python for Business:</a></h4>
+					<a href="#"><img src="img/carousel.jpg" alt="" /></a>
+          <p>Viral Marketing Analysis: Discrete Time Markov Chain Epidemiological Model</p>
+        </div>
+				<div id="p2">
+          <h4><a href="#">Mathematical Python for Business:</a></h4>
+					<a href="#"><img src="img/carousel.jpg" alt="" /></a>
+          <p>Demand Forecasting: Fourier Time Series Estimation</p>
+        </div>
+				<div id="p3">
+          <h4><a href="#">Cybersecurity:</a></h4>
+					<a href="#"><img src="img/carousel.jpg" alt="" /></a>
+          <p>Detecting Malicious Beaconing Using Unsupervised Learning (Apache Spark)</p>
+        </div>
+				<div id="p4">
+          <h4><a href="#">iOS Application:</a></h4>
+					<a href="#"><img src="img/carousel.jpg" alt="" /></a>
+          <p>Pantry (Prototype)</p>
+        </div>
+			</div>
+			<div class="clear"></div>
+	<a class="arrow" onclick="clickArrow('t3')">
+ 	 <span class="left"></span>
+ 	 <span class="right"></span>
+  </a>
+</div>
+
+<div id="About" class="tabcontent">
+	<div class="wrapper">
+	<div id ="image">
+	<img src="img/profile.png">
+	</div>
+	<div id="text">
+	<p id="l1">+I'm a programmer and barista from San Jose, CA</p>
+	<p id="l2">+Currently pursuing a BS degree at Brown University in Providence, RI</p>
+	<p id="l3">+I have interned at NASA Ames and completed a few freelance projects (web/mobile development and data analysis)</p>
+	</div>
+	</div>
+	<a class="arrow" id="arrow3" onclick="clickArrow('t4')">
+		<span class="left"></span>
+		<span class="right"></span>
+	</a>
+</div>
+
+<div id="Contact" class="tabcontent">
+	<div class="links">
+	<img src="img/contact.png" width="100%" usemap="socials">
+
+	</div>
+</div>
+	<div class="footer">
+  <p> Github repository for this site can be found here <a href="https://www.github.com">📂</a>
+	Designed in Opera browser, graphics designed in Adobe Illustrator CC</p>
+</div>
+<script type="text/javascript" src="js/home.js">
+</script>
+</body>
+</html>
