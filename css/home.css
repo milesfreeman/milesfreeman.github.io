@@ -211,6 +211,7 @@ text-align: center;
   flex-wrap: wrap;
   width: 100%;
   padding-top: 5%;
+  text-align: center;
 }
 
 .wrap div h4 a {
@@ -232,17 +233,28 @@ text-align: center;
   text-align: center;
 }
 
-  #p1, #p2, #p3, #p4 {
+  #p1{
     display: inline-block;
     background: none;
   	background-color: blue;
-    border-radius: 20px;
+    border-radius: 5px;
   	/* box-shadow: 5px 5px 2px 0px yellow; */
-  	padding: 15px;
-  	width: 17%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+  	width: 35%;
+    height: 38%;
+    position: fixed;
+    left: 10%;
   }
+   #p3 {
+     width: 35%;
+     height: 38%;
+     display: inline-block;
+     background: none;
+   	 background-color: blue;
+     border-radius: 5px;
+     position: fixed;
+     left: 55%;
+   }
+
 
   #Portfolio .arrow{
     position: absolute;
